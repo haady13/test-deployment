@@ -1,0 +1,28 @@
+{
+  "name": "testNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "nodemon --ignore public/uploads/ server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "6.3.0",
+    "dotenv": "8.2.0",
+    "express": "4.18.2",
+    "ejs": "3.1.8",
+    "express-zip": "3.0.0",
+    "path": "0.12.7",
+    "serve": "14.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.20"
+  }
+}
