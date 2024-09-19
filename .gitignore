@@ -17,7 +17,6 @@ client/package-lock.json
 client/build
 .env
 
-public
 static 
 
 config/keys.js
