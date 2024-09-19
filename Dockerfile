@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY package*.json ./
 COPY client/package*.json ./client/
+COPY client/index.html ./client/public/index.html
 
 RUN npm install --prefix ./client
 

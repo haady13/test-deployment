@@ -40,8 +40,8 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ecs-task-definition.json
-          service: my-ecs-service
-          cluster: my-ecs-cluster
+          service: testapp-service
+          cluster: testapp-cluster
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
