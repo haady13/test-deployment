@@ -9,6 +9,7 @@ COPY / .
 
 COPY client /app/client
 WORKDIR /app/client
+COPY /client/package*.json ./
 RUN npm install  && npm run build
 
 WORKDIR /app
