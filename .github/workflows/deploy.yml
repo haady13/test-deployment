@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: '16.17.1'
 
-      - name: Build React app
+      - name: Install and Build React app
         run: |
           cd client
-          npm install --production
+          npm install
           npm run build
 
       - name: Build Docker image
