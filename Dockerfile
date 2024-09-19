@@ -9,7 +9,7 @@ COPY / .
 
 COPY client /app/client
 WORKDIR /app/client
-RUN npm install --production && npm run build
+RUN npm install  && npm run build
 
 WORKDIR /app
 
