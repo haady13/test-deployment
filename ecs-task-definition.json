@@ -1,0 +1,29 @@
+{
+    "family": "testapp",
+    "containerDefinitions": [
+        {
+            "name": "testapp-container",
+            "image": "106547353603.dkr.ecr.us-east-2.amazonaws.com/test-app:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": []
+        }
+    ],
+    "executionRoleArn": "arn:aws:iam::106547353603:role/ECSFargateExecutionRole",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
