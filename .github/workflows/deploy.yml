@@ -45,7 +45,7 @@ jobs:
       - name: Deploy to ECS
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
-          task-definition: ecs-task-definition.json
+          task-definition: testapp
           service: testapp-service
           cluster: testapp-cluster
         env:
